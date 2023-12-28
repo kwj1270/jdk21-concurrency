@@ -1,4 +1,4 @@
-package com.lab.concurrency.scope;
+package com.lab.sc.scope;
 
 public class ScopeVariableRunner {
     public static void main(String[] args) {

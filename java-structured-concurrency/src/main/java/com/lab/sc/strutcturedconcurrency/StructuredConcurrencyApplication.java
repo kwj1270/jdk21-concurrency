@@ -1,4 +1,4 @@
-package com.lab.concurrency.strutcturedconcurrency;
+package com.lab.sc.strutcturedconcurrency;
 
 import com.lab.concurrency.strutcturedconcurrency.clients.CurrencyClients;
 import com.lab.concurrency.strutcturedconcurrency.clients.UserClients;

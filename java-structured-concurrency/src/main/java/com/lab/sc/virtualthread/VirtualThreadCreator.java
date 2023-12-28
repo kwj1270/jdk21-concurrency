@@ -1,4 +1,4 @@
-package com.lab.concurrency.virtualthread;
+package com.lab.sc.virtualthread;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
