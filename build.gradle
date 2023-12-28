@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.lab'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '21'
+}
+
+allprojects {
+    plugins.apply("java")
+    group = "com.lab"
+    version = "0.0.1-SNAPSHOT"
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation 'org.slf4j:slf4j-api:2.0.9'
+    }
+
+    java {
+        sourceCompatibility = '21'
+    }
+}
