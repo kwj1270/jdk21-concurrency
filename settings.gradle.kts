@@ -4,5 +4,6 @@ include(
     "java-cps",
     "java-fsm",
     "java-fsmcps",
-    "java-structured-concurrency"
+    "java-structured-concurrency",
+    "java-vt",
 )
