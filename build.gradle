@@ -9,7 +9,7 @@ java {
     sourceCompatibility = '21'
 }
 
-subprojects {
+allprojects {
     plugins.apply("java")
     group = "com.lab"
     version = "0.0.1-SNAPSHOT"
