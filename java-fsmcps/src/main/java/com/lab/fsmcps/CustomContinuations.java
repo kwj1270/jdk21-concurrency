@@ -1,6 +1,6 @@
 package com.lab.fsmcps;
 
-public interface Continuation<T> {
+public interface CustomContinuations<T> {
     CoroutineContext context();
 
     void resumeWith(Result<T> result);

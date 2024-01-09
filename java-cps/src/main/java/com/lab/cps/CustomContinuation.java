@@ -1,6 +1,6 @@
 package com.lab.cps;
 
-public interface Continuation<T> {
+public interface CustomContinuation<T> {
     CoroutineContext context();
 
     void resumeWith(Result<T> result);

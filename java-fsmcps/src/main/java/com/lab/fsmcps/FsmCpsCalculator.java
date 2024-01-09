@@ -9,7 +9,7 @@ public class FsmCpsCalculator {
     private final static AtomicInteger atomicInteger = new AtomicInteger();
     private final static Logger log = LoggerFactory.getLogger(FsmCpsCalculator.class);
 
-    public void calculate(final int initialValue, final Continuation<Integer> continuation) {
+    public void calculate(final int initialValue, final CustomContinuations<Integer> continuation) {
         final CustomContinuation<Integer> currentContinuation = crateContinuation(continuation);
         switch (currentContinuation.getLabel()) {
             case 0 -> currentContinuation.firstStep(initialValue, currentContinuation);
@@ -20,8 +20,8 @@ public class FsmCpsCalculator {
         log.info("loop count = {}", atomicInteger.incrementAndGet());
     }
 
-    private CustomContinuation<Integer> crateContinuation(final Continuation<Integer> continuation) {
-        if (continuation instanceof CustomContinuation) {
+    private CustomContinuation<Integer> crateContinuation(final CustomContinuations<Integer> continuation) {
+        if (continuation instanceof CustomContinuations) {
             return (CustomContinuation) continuation;
         }
         return new CustomContinuation(this, continuation);
