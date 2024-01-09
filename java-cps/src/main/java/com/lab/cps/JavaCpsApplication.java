@@ -13,7 +13,7 @@ public class JavaCpsApplication {
         final CpsCalculator cpsCalculator = new CpsCalculator();
         cpsCalculator.calculate(5, result -> log.info("result = {}", result));
 
-        final JavaContinuation javaContinuation = new JavaContinuation();
+        final JavaCustomContinuation javaContinuation = new JavaCustomContinuation();
         javaContinuation.resumeWith(new Result<>(10));
         javaContinuation.resumeWith(new Result<>(10));
         javaContinuation.resumeWith(new Result<>(new RuntimeException("hell world")));
